@@ -5,12 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#f8fafc">
   <title>Fetch Data | User Directory</title>
+  <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 <body>
-  <main>
-    <h1>Hello</h1>
+  <main class="p-6 flex flex-col gap-4">
+    <div class="flex gap-1 w-full justify-between items-center">
+      <input type="search" name="search-bar" id="search-input" placeholder="category..." class="p-2
+      border border-gray-400 outline-none rounded-l-md w-full">
+      <select name="category" id="categories" class="p-2 border border-gray-400 outline-none rounded-r-md">
+        <option value="all">All</option>
+      </select>
+
+    </div>
+    <p class="text-xl category-title capitalize">Products</p>
+    <section id="productCon" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+      
+    </section>
   </main>
-  <script src="script.js" defer></script>
+  <script src="script.js"></script>
 </body>
 </html>
